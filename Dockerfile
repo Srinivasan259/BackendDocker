@@ -1,5 +1,5 @@
 FROM openjdk:17
 WORKDIR /app
-COPY ${JAR_FILE} app.jar
+COPY ${WAR_FILE} app.war
 EXPOSE 8080
-CMD ["java", "jar", "LibraryMS.war"]
+CMD ["java", "-war", "LibraryMS.war"]
